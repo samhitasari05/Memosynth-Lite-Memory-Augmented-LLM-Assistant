@@ -1,4 +1,4 @@
-# MemoSynth-Lite: Memory-Augmented LLM Assistant
+## MemoSynth-Lite: Memory-Augmented LLM Assistant
 
 MemoSynth-Lite is a lightweight, privacy-conscious memory system that augments LLMs with structured long-term memory using Qdrant, DuckDB, and Neo4j. It simulates how agents can remember past conversations, summarize insights, and deliver context-rich responses — all stored and retrieved across semantic, temporal, and relational memory layers.
 
