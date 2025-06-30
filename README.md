@@ -142,6 +142,7 @@ MemoSynth-Lite is a lightweight, privacy-conscious memory system that augments L
 ```
 
 ## Directory Structure
+```
 .
 ├── core/
 │   ├── app.py                 # Streamlit UI
@@ -161,7 +162,7 @@ MemoSynth-Lite is a lightweight, privacy-conscious memory system that augments L
 ├── requirements.txt
 ├── README.md
 └── LICENSE
-
+```
 ## Getting Started
 
 ### 1. Clone the Repository
