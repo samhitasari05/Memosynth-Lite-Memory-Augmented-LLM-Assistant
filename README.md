@@ -271,5 +271,63 @@ Discarded logs shown below main results
 
 ---------
 
+### DuckDB Timeline Memory
+
+Timeline memory helps answer questions like:
+
+"What happened last month?"
+
+"Summarize all decisions from Project Atlas."
+
+| Field       | Type      | Description                            |
+| ----------- | --------- | -------------------------------------- |
+| log\_id     | TEXT      | Unique ID of the log                   |
+| timestamp   | TIMESTAMP | Date and time when the event occurred  |
+| user        | TEXT      | Author of the log                      |
+| project     | TEXT      | Project or topic name                  |
+| type        | TEXT      | Memory type (e.g., decision, feedback) |
+| content     | TEXT      | Main content of the memory             |
+| session\_id | TEXT      | Session identifier                     |
+
+----
+
+### Privacy & Security Considerations
+
+Logs contain synthetic data only (e.g., "alice")
+
+All processing is local — no OpenAI keys required
+
+Memory logs support TTL expiration & summarization
+
+Supports future sensitivity-based storage policies
+
+No external API log storage — ensures confidentiality
+
+-----
+
+### Future Work
+
+Slack/Notion log integration
+
+Manual tagging and deletion (“Forget this” feature)
+
+Sensitivity-aware memory storage
+
+Long-term memory decay logic
+
+Named-entity summary views (e.g., per customer)
+
+---
+
+### Known Limitations
+
+Batch summarization only — not real-time
+
+Neo4j currently stores only basic log connections
+
+Not optimized for very large-scale memory yet
+
+UI filters limited to project/type (for now)
+
 
 
