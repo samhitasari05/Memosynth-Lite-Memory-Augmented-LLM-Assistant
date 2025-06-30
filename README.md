@@ -20,7 +20,7 @@ MemoSynth-Lite is a lightweight, privacy-conscious memory system that augments L
 ---
 
 ## Architecture
-
+```
 +--------------------------------------------------+
 | Synthetic Log Generator                          |
 | (memory_logs_with_historic_impact.jsonl)         |
@@ -139,6 +139,7 @@ MemoSynth-Lite is a lightweight, privacy-conscious memory system that augments L
 | - Optional: memory["sensitivity"] for conditional storage policies                   |
 | - Secure ingestion layers (local Docker / API-gated)                                 |
 +--------------------------------------------------------------------------------------+
+```
 
 ## Directory Structure
 .
